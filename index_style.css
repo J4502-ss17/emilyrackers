@@ -1,64 +1,51 @@
-/*styles go here*/
 p{
-  color:#3a3536
+  color:#3a3536;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-h1{ font-family: Georgia, "Times New Roman", serif;
+h1{
+font-weight: bold;
+font-family: Georgia, "Times New Roman", serif;
 }
 
 body{
   background-color: #eac0c6
 }
-
 #container{
-  width:90%;
-margin: 0 auto;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
 }
-
-#nav{
-  padding:0;
-  list-style-type: none;
+#nav {
+    padding: 0;
+	list-style-type: none;
 }
 
 #nav li {
-padding: 0;
-margin: 0;
-border-bottom: 1px solid #ccc;
-}
-
-#nav a:link, #nav a:visited {
-  display: block;
-  color:#ffffff;
+    margin: 0;
+    padding: 0;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
   background-color: #3a3536;
-  font-weight: bold;
-  text-align: center;
-text-decoration: none;
-padding: 4px;
-font-family: Helvetica, Arial, sans-serif;
 }
 
-#nav a:hover, #nav a:active {
-  background-color: #c9bbbd;
+#nav a:link, a:visited {
+	display:block;
+    color: #ffffff;
+    text-align:center;
+    text-decoration: none;
+    padding: 1px;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
-.caption{
-color: black;
-font-family: Georgia, "Times New Roman", serif;
-margin-top: 0;
-font-style: italic;
-  font-size: 0.8em;
-  text-align: right;
+#nav a:hover, a:active {
+    background-color: #7a991a;
 }
-
-#footer{
-  color: black;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.8em;
-  border-top: 1px solid black;
-}
-
 
 img{
   border: none;
+}
+#footer{
+  text-align: center;
+  font-weight: bold;
 }
