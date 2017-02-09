@@ -1,11 +1,14 @@
+html{
+  font-size:100%
+}
 p{
   color:#3a3536;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Sahitya', serif;
 }
 
 h1{
 font-weight: bold;
-font-family: Georgia, "Times New Roman", serif;
+font-family: 'Arsenal', sans-serif;
 }
 
 body{
@@ -39,7 +42,11 @@ body{
 }
 
 #nav a:hover, a:active {
-    background-color: #7a991a;
+    background-color: #877b7e;
+}
+
+.italic{
+  font-style: italic;
 }
 
 img{
