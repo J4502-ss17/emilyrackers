@@ -35,6 +35,10 @@ p{
   border-bottom: none;
 }
 
+.nav li{
+  padding: 10px;
+}
+
 .nav a:link, a:visited {
 	display:block;
     color: #ffffff;
@@ -101,10 +105,6 @@ header, article, aside, footer {
         order: 2;
     }
 
-    .aside-2 {
-        order: 3;
-    }
-
     footer {
         order: 4;
     }
@@ -116,7 +116,6 @@ header, article, aside, footer {
       }
       .image {
           width: 45%;
-          margin-right: 10px;
       }
 
       .story {
