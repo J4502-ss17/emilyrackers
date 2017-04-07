@@ -58,6 +58,7 @@ p{
 
 img{
   border: none;
+  display: none;
 }
 footer{
   text-align: center;
@@ -72,6 +73,20 @@ footer{
 header, article, aside, footer {
   flex: 1 100%;
   padding: 10px;
+}
+
+.container {
+  text-align: center;
+}
+@media screen and (min-width:600px){
+
+    .container {
+        width: 80%;
+    }
+
+    img{
+        display: block;
+    }
 }
 
 @media (min-width:800px) {
@@ -125,4 +140,17 @@ header, article, aside, footer {
       .first {
           margin-top: 0;
       }
+}
+
+@media screen and (min-width:1000px){
+  img{
+    width:75%;
+    align-items: flex-start;
+
+  }
+.container{
+  width:75%;
+  padding-right: 50px;
+  padding-left: 50px;
+}
 }
