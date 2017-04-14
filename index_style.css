@@ -3,7 +3,72 @@ body{
   font-family: 'Sahitya', serif;
 }
 
+nav ul li {
+    display: block;
+    border-top: 1px #79896d solid;
+}
+
+nav a {
+    color: #79896d;
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+nav{
+  list-style:none;
+  margin:0;
+  padding:0;
+  background:#877b7e;
+  display: flex;
+  flex-flow: column;
+}
+
+nav a{
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align:center;
+  padding:10px;
+  border-bottom: 1px solid black;
+}
+
+nav li:last-of-type a{
+  border-bottom: none;
+}
+
+nav li{
+  padding: 10px;
+}
+
+nav a:link, a:visited {
+	display:block;
+    color: #ffffff;
+    text-align:center;
+    text-decoration: none;
+    padding: 1px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+nav a:hover, a:active {
+    background-color: #;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    background-color: #65a8a6;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+}
 h1 {
+  order: 2;
   font-size:2em;
 font-weight: bold;
 }
@@ -13,44 +78,10 @@ p{
   color:#3a3536;
 }
 
-.nav{
-  list-style:none;
-  margin:0;
-  padding:0;
-  background:#3a3536;
-  display: flex;
-  flex-flow: column;
+nav ul {
+  display: none;
 }
 
-.nav a{
-  text-decoration: none;
-  display: block;
-  color: white;
-  text-align:center;
-  padding:10px;
-  border-bottom: 1px solid black;
-}
-
-.nav li:last-of-type a{
-  border-bottom: none;
-}
-
-.nav li{
-  padding: 10px;
-}
-
-.nav a:link, a:visited {
-	display:block;
-    color: #ffffff;
-    text-align:center;
-    text-decoration: none;
-    padding: 1px;
-    font-family: Georgia, "Times New Roman", serif;
-}
-
-.nav a:hover, a:active {
-    background-color: #877b7e;
-}
 
 .italic{
   font-style: italic;
@@ -87,20 +118,33 @@ header, article, aside, footer {
     img{
         display: block;
     }
+
+    nav ul {
+      display: flex;
+    }
 }
 
 @media (min-width:800px) {
 
-    .nav {
+  .menu-trigger {
+      display: none;
+  }
+
+    nav {
         flex-flow: row wrap;
         justify-content: flex-end;
 
     }
-    .nav a{
+
+    nav ul {
+      display: flex;
+    }
+    
+    nav a{
       border: none;
     }
 
-    .nav a:hover{
+    nav a:hover{
       background:#877b7e;
     }
 
@@ -143,6 +187,11 @@ header, article, aside, footer {
 }
 
 @media screen and (min-width:1000px){
+
+  .menu-trigger {
+      display: none;
+  }
+
   img{
     width:75%;
     flex: auto;
